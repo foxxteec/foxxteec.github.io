@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="imagenes/isotipotec.png" type="image/x-icon">
+    <title>FoxTec</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="https://kit.fontawesome.com/9a13d72188.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="imagenes/logofoxtec.svg" alt="">
+        </div>
+        <div class="hamburguesa">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#oferts">Categorías</a></li>
+                <li><a href="#">Productos</a></li>
+                <li><a href="#foxtec">¿Quiénes somos?</a></li>
+            </ul>
+        </nav>
+        <div>
+            <ul>
+                <li class="submenu">
+                    <img id="img-carrito" src="imagenes/iconocarrito.png" alt="car">
+                    <div id="carrito">
+                        <table id="lista-carrito">
+                            <thead>
+                                <tr>
+                                    <th>Producto</th>
+                                    <th>Nombre</th>
+                                    <th>Precio</th>
+                                </tr>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+                        <a href="#" id="vaciar-carrito" class="btn-3">Vaciar Carrito</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        </nav>
+    </header>
+
+    <script>
+        hamburguesa = document.querySelector(".hamburguesa");
+        hamburguesa.onclick = function () {
+            navbar = document.querySelector(".nav-bar")
+            navbar.classList.toggle("active");
+        }
+    </script>
+
+    <section id="hero">
+        <h1>Tu acceso al futuro<br>a solo un clic de distancia</h1>
+        <button>VER TODOS LOS PRODUCTOS</button>
+    </section>
+
+    <section id="foxtec">
+        <div class="container">
+            <div class="img-container"></div>
+            <div class="texto">
+                <h2><span>FOXTEC</span> TECNOLOGÍA Y MAS</h2>
+                <p>La venta online ofrece una experiencia de compra conveniente y eficiente que permite a los
+                    consumidores acceder a una amplia variedad de productos desde la comodidad de sus hogares. Al
+                    eliminar la necesidad de desplazarse físicamente a una tienda, se ahorra tiempo y esfuerzo, lo
+                    que
+                    resulta especialmente valioso en el agitado ritmo de vida actual. Además, la compra en línea
+                    frecuentemente brinda la ventaja de precios más bajos en comparación con las tiendas físicas,
+                    gracias a una menor estructura de costos para los vendedores.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="oferts">
+        <section class="oferts container">
+
+            <div class="ofert-1 b1">
+                <div class="ofert-txt">
+                    <h3>PC's Gamer</h3>
+                    <a href="#">Ir</a>
+                </div>
+                <div class="ofert-img">
+                    <img class="zoom" src="imagenes/pcgaming.png" alt="pc">
+                </div>
+            </div>
+            <div class="ofert-1 b2">
+                <div class="ofert-txt">
+                    <h3>Componentes y periféricos</h3>
+                    <a href="#">Ir</a>
+                </div>
+                <div class="ofert-img">
+                    <img class="zoom" src="imagenes/componentes.png" alt="pc">
+                </div>
+            </div>
+            <div class="ofert-1 b3">
+                <div class="ofert-txt">
+                    <h3>Laptops Gamer</h3>
+                    <a href="#">Ir</a>
+                </div>
+                <div class="ofert-img">
+                    <img class="zoom" src="imagenes/laptosgaming.png" alt="pc">
+                </div>
+            </div>
+
+        </section>
+    </section>
+
+    <main class="products container">
+        <h2>Laptops Gamer</h2>
+        <div class="box-container" id="lista-1">
+
+            <div class="box">
+                <img src="imagenes/laptop-1.jpg" alt="">
+                <div class="product-txt">
+                    <h3>LAPTOP GAMER ASUS ROG STRIX G513QM-WS96 GAMING | RYZEN 9 5900HX | NVIDIA RTX 3060 6GB | 1TB SSD
+                        | 16GB RAM | 15.6″ (1920×1080) | 144Hz | WIN10</h3>
+                    <p>✔️Disponible</p>
+                    <p class="precio">S/4,999.00</p>
+                    <a href="" class="agregar-carrito btn-3" data-id="1">Agregar al carrito</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="imagenes/laptop-2.jpg" alt="">
+                <div class="product-txt">
+                    <h3>LAPTOP GAMER LENOVO LEGION 5 15ACH6 | RYZEN 5 5600H | GEFORCE RTX 3050 4GB | 512GB SSD | 8GB RAM
+                        | 15.6″ FHD | WINDOWS 11 HOME</h3>
+                    <p>✔️ Disponible</p>
+                    <p class="precio">S/2,999.00</p>
+                    <a href="" class="agregar-carrito btn-3" data-id="2">Agregar al carrito</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="imagenes/laptop-3.jpg" alt="">
+                <div class="product-txt">
+                    <h3>LAPTOP GAMER MSI KATANA 1512082 15 GAMING | CORE™ i7-12650H | NVIDIA RTX 4070 8GB | 1TB SSD |
+                        16GB RAM | 15.6″ (1920×1080) | 144Hz | WIN11</h3>
+                    <p>❌ Agotado</p>
+                    <p class="precio">S/6,489.00</p>
+                    <a href="" class="agregar-carrito btn-3" data-id="3">Agregar al carrito</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="imagenes/laptop-4.jpg" alt="">
+                <div class="product-txt">
+                    <h3>LAPTOP MSI GE75 RAIDER | Core™ i7 10750H 2.6GHZ 5.0 TURBO | NVIDIA GTX2060 6GB DDR6 | 1TB SSD +
+                        512 SSD | 16GB DDR4 | 15.6″ FHD 144HZ | TECLADO ILUMINADO NUMERICO | BLACK</h3>
+                    <p>❌ Agotado</p>
+                    <p class="precio">S/2,999.00</p>
+                    <a href="" class="agregar-carrito btn-3" data-id="4">Agregar al carrito</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="imagenes/laptop-5.jpg" alt="">
+                <div class="product-txt">
+                    <h3>LAPTOP MSI BRAVO C7VF-010US | RYZEN 5 7535HS 3.3GHZ 4.7 TURBO | NVIDIA RTX4050 6GB DDR6 | 512GB
+                        SSD | 16GB DDR5 | 15.6″ FHD 144HZ | WINDOWS 11 | WEBCAM | TECLADO ILUMINADO NUMERICO</h3>
+                    <p>✔️ Disponible</p>
+                    <p class="precio">S/3,999.00</p>
+                    <a href="" class="agregar-carrito btn-3" data-id="5">Agregar al carrito</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="imagenes/laptop-6.jpg" alt="">
+                <div class="product-txt">
+                    <h3>LAPTOP GAMER ACER NITRO 5 AN515-58-76ND GAMING Core™ i7-12700H | NVIDIA® RTX 3060 | 512GB SSD |
+                        16GB DDR5 | 15.6″ (1920×1080) | 165Hz | WIN11 | 6144MB SHALE BLACK Backlit Keyboard</h3>
+                    <p>❌ Agotado</p>
+                    <p class="precio">S/4,459.00</p>
+                    <a href="" class="agregar-carrito btn-3" data-id="6">Agregar al carrito</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="imagenes/laptop-7.jpg" alt="">
+                <div class="product-txt">
+                    <h3>LAPTOP GAMER Lenovo LEGION PRO 5 16IRX8 GAMING Core™ i9-13900HX 1TB SSD 16GB 16″ WQXGA
+                        (2560×1600) 240Hz IPS WIN11 NVIDIA® RTX 4070 8192MB ONYX GREY RGB Backlit Keyboard</h3>
+                    <p>✔️ Disponible</p>
+                    <p class="precio">S/9,799.00</p>
+                    <a href="" class="agregar-carrito btn-3" data-id="7">Agregar al carrito</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="imagenes/laptop-8.jpg" alt="">
+                <div class="product-txt">
+                    <h3>Notebook Lenovo ThinkPad P16 Gen1 16″ WUXGA IPS Core i7-13700H 2.4/5.0GHz, 32GB DDR5-5600 1TB
+                        SSD M.2 NVIDIA RTX A500 (4GB GDDR6) TECLADO ESPAÑOL Windows 11 Pro</h3>
+                    <p>✔️ Disponible</p>
+                    <p class="precio">S/8,899.00</p>
+                    <a href="" class="agregar-carrito btn-3" data-id="8">Agregar al carrito</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="imagenes/laptop-9.jpg" alt="">
+                <div class="product-txt">
+                    <h3>Laptop gamer Lenovo IdeaPad Gaming 3 15.6″ FHD IPS AMD Ryzen 5 6600H 3.3/4.5GHz 16GB DDR5-4800
+                        512GB SSD M.2 RTX 3050 4GB GDDR6 TECLADO ESPAÑOL Windows 11 Home</h3>
+                    <p>✔️ Disponible</p>
+                    <p class="precio">S/.3,649.00</p>
+                    <a href="" class="agregar-carrito btn-3" data-id="9">Agregar al carrito</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="imagenes/laptop-10.jpg" alt="">
+                <div class="product-txt">
+                    <h3>LAPTOP GAMER Lenovo Legion Pro 5 16ARX8 | Ryzen 7 7745HX 3.6/5.1GHz | RTX 4070 8GB GDDR6 | 16″
+                        WQXGA IPS | 1TB SSD M.2 | 32GB DDR5-5200 | TECLADO ESPAÑOL | Windows 11 Home</h3>
+                    <p>✔️ Disponible</p>
+                    <p class="precio">S/9,999.00</p>
+                    <a href="" class="agregar-carrito btn-3" data-id="10">Agregar al carrito</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="imagenes/laptop-11.jpg" alt="">
+                <div class="product-txt">
+                    <h3>LAPTOP GAMER Lenovo Slim 5 16IRH8 | Core i7-13700H 2.4/5.0GHz | RTX 4060 (8GB GDDR6) | 512GB SSD
+                        M.2 | 16GB DDR5-5200 | 16″ WQXGA IPS | TECLADO ESPAÑOL | Windows 11 Home</h3>
+                    <p>✔️ Disponible</p>
+                    <p class="precio">S/6,998.00</p>
+                    <a href="" class="agregar-carrito btn-3" data-id="11">Agregar al carrito</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="imagenes/laptop-12.jpg" alt="">
+                <div class="product-txt">
+                    <h3>LAPTOP GAMER Lenovo LOQ 15IRH8 | Core i7-13620H 2.4/4.9GHz | RTX 4050 6GB GDDR6 | 512GB SSD M.2
+                        | 16GB DDR5-5200 | 15.6″ FHD IPS | TECLADO ESPAÑOL</h3>
+                    <p>✔️ Disponible</p>
+                    <p class="precio">S/4,998.00</p>
+                    <a href="" class="agregar-carrito btn-3" data-id="12">Agregar al carrito</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="imagenes/laptop-13.jpg" alt="">
+                <div class="product-txt">
+                    <h3>LAPTOP GAMER ASUS ROG STRIX G15 G513RM-WS74 | RYZEN-7-6800H | RTX 3060 6GB GDDR6 | 1TB SSD |
+                        16GB RAM DDR5 | 15.6″ WQHD 2560X1440 IPS 165HZ | WINDOWS 11</h3>
+                    <p>✔️ Disponible</p>
+                    <p class="precio">S/4,499.00</p>
+                    <a href="" class="agregar-carrito btn-3" data-id="13">Agregar al carrito</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="imagenes/laptop-14.jpg" alt="">
+                <div class="product-txt">
+                    <h3>LAPTOP GAMER ASUS ROG ZEPHYRUS DUO 16 GX650 GX650PY-NM005W 16″ IPS WQXGA – 2560 x 1600 – AMD
+                        Ryzen 9 7945HX – 32GB DDR5 2TB SSD NVME NVIDIA GeForce RTX 4090 16GB TECLADO ESPAÑOL WINDOWS 11
+                    </h3>
+                    <p>✔️ Disponible</p>
+                    <p class="precio">S/16,999.00</p>
+                    <a href="" class="agregar-carrito btn-3" data-id="14">Agregar al carrito</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="imagenes/laptop-15.jpg" alt="">
+                <div class="product-txt">
+                    <h3>LAPTOP Asus VivoBook F1500EA-WB51 Core™ i5-1135G7 256GB SSD 8GB 15.6″ (1920×1080) WIN11 BLACK
+                    </h3>
+                    <p>✔️ Disponible</p>
+                    <p class="precio">S/1,989.00</p>
+                    <a href="" class="agregar-carrito btn-3" data-id="15">Agregar al carrito</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="imagenes/laptop-16.jpg" alt="">
+                <div class="product-txt">
+                    <h3>Notebook Lenovo IdeaPad 1 15AMN7 15.6″ FHD TN AMD Ryzen 3 7320U 2.4/4.1GHz 8GB LPDDR5-5500 512GB
+                        M.2 NVME WEB 720P</h3>
+                    <p>✔️ Disponible</p>
+                    <p class="precio">S/1,498.00</p>
+                    <a href="" class="agregar-carrito btn-3" data-id="16">Agregar al carrito</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="btn-2" id="load-more">Cargar Mas</div>
+    </main>
+
+    <main class="products container">
+        <h2>PC's Gamer</h2>
+        <div class="box-container" id="lista-2">
+
+            <div class="box">
+                <img src="imagenes/pc-1.png" alt="">
+                <div class="product-txt">
+                    <h3>PC Build #6788 RYZEN 7 5700X | RTX 4060 TI VENTUS 2X 8GB GDDR6 | 16GB RAM | 1TB SSD NVME | 750W
+                    </h3>
+                    <p>✔️ Disponible</p>
+                    <p class="precio">S/4,399.00</p>
+                    <a href="" class="agregar-carrito btn-3" data-id="17">Agregar al carrito</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="imagenes/pc-2.png" alt="">
+                <div class="product-txt">
+                    <h3>PC Build #6784 INTEL CORE I7 12700KF + MSI RTX 4060 TI GAMING X 8GB GDDR6 | 16GB RAM | 500GB SSD
+                        | 750W</h3>
+                    <p>✔️ Disponible</p>
+                    <p class="precio">S/4,965.00</p>
+                    <a href="" class="agregar-carrito btn-3" data-id="2">Agregar al carrito</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="imagenes/pc-3.png" alt="">
+                <div class="product-txt">
+                    <h3>PC Build #6787 AMD RYZEN 7 5800X + MSI RTX 4060 GAMING X | 16GB RAM | 500GB SSD | 650W</h3>
+                    <p>❌ Agotado</p>
+                    <p class="precio">S/3,810.00</p>
+                    <a href="" class="agregar-carrito btn-3" data-id="3">Agregar al carrito</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="imagenes/pc-4.png" alt="">
+                <div class="product-txt">
+                    <h3>PC Build #6785 INTEL CORE I7 12700KF | RTX 4060 GAMING X 8GB GDDR6 | 32GB RAM | 500GB SSD | 750W
+                    </h3>
+                    <p>❌ Agotado</p>
+                    <p class="precio">S/4,725.00</p>
+                    <a href="" class="agregar-carrito btn-3" data-id="4">Agregar al carrito</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="imagenes/pc-5.png" alt="">
+                <div class="product-txt">
+                    <h3>PC Build #6767 INTEL CORE I5 13600K | RTX 4070 VENTUS 2X OC 12GB GDDR6X | 32GB RAM | 1TB SSD |
+                        850W</p>
+                        <p class="precio">S/6,799.00</p>
+                        <a href="" class="agregar-carrito btn-3" data-id="5">Agregar al carrito</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="imagenes/pc-6.png" alt="">
+                <div class="product-txt">
+                    <h3>PC Build #6783 INTEL CORE I5-12400F | RTX 4060 GAMING X 8GB GDDR6 | 16GB RAM | 1TB SSD | 650W
+                    </h3>
+                    <p>✔️ Disponible</p>
+                    <p class="precio">S/3,750.00</p>
+                    <a href="" class="agregar-carrito btn-3" data-id="6">Agregar al carrito</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="imagenes/pc-7.png" alt="">
+                <div class="product-txt">
+                    <h3>PC Build #6782 INTEL CORE I5-13400F | RTX 4060 GAMING X | 16GB RAM | 500GB SSD | 650W</h3>
+                    <p>❌ Agotado</p>
+                    <p class="precio">S/3,659.00</p>
+                    <a href="" class="agregar-carrito btn-3" data-id="7">Agregar al carrito</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="imagenes/pc-8.png" alt="">
+                <div class="product-txt">
+                    <h3>PC Build #6754 AMD RYZEN 9 7950X | RTX 4090 TUF OC EDITION 24GB GDDR6X | 32GB RAM | 1TB SSD |
+                        1200W</h3>
+                    <p>✔️ Disponible</p>
+                    <p class="precio">S14,999.00</p>
+                    <a href="" class="agregar-carrito btn-3" data-id="8">Agregar al carrito</a>
+                </div>
+            </div>
+    </main>
+
+    <main class="products container">
+        <h2>Componentes y periféricos</h2>
+        <div class="box-container" id="lista-3">
+
+            <div class="box">
+                <img src="imagenes/case-1.jpg" alt="">
+                <div class="product-txt">
+                    <h3>CASE CYBERTEL STRIKER 4FANS RGB BLACK</h3>
+                    <p>❌ Agotado</p>
+                    <p class="precio">S/149.00</p>
+                    <a href="" class="agregar-carrito btn-3" data-id="1">Agregar al carrito</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="imagenes/case-2.jpg" alt="">
+                <div class="product-txt">
+                    <h3>CASE ANTRYX FX730 BLACK ARGB FANX4 USB TIPO C AC-FX730K</h3>
+                    <p>✔️ Disponible</p>
+                    <p class="precio">S/389.00</p>
+                    <a href="" class="agregar-carrito btn-3" data-id="2">Agregar al carrito</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="imagenes/monitor-1.jpg" alt="">
+                <div class="product-txt">
+                    <h3>MONITOR TEROS 3194N, 27″ VA Curvo,165 Hz, 1920×1080 FHD, HDMI, DP, FREESYNC (x)</h3>
+                    <p>✔️ Disponible</p>
+                    <p class="precio">S/6,489.00</p>
+                    <a href="" class="agregar-carrito btn-3" data-id="3">Agregar al carrito</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="imagenes/monitor-2.jpg" alt="">
+                <div class="product-txt">
+                    <h3>MONITOR TEROS 2711S, 27″ IPS, FLAT 100Hz, 1920×1080, FreeSync, Full HD, HDMI (X)</h3>
+                    <p>MONITOR TEROS 2711S, 27″ IPS, FLAT 100Hz, 1920×1080, FreeSync, Full HD, HDMI (X)</p>
+                    <p class="precio">S/2,999.00</p>
+                    <a href="" class="agregar-carrito btn-3" data-id="4">Agregar al carrito</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="imagenes/tarjeta-de-video-1.jpg" alt="">
+                <div class="product-txt">
+                    <h3>TARJETA VIDEO GIGABYTE NVIDIA RTX 4070 AERO OC 12GB GDDR6X PCIE 4.0</h3>
+                    <p>❌ Agotado</p>
+                    <p class="precio">S/3,149.00</p>
+                    <a href="" class="agregar-carrito btn-3" data-id="5">Agregar al carrito</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="imagenes/tarjeta-de-video-2.jpg" alt="">
+                <div class="product-txt">
+                    <h3>TARJETA VIDEO GIGABYTE NVIDIA RTX 4070 EAGLE OC 12GB GDDR6X PCI-E 4.0</h3>
+                    <p>✔️ Disponible</p>
+                    <p class="precio">S/2,989.00</p>
+                    <a href="" class="agregar-carrito btn-3" data-id="6">Agregar al carrito</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="imagenes/ram-1.jpg" alt="">
+                <div class="product-txt">
+                    <h3>MEMORIA RAM TEAMGROUP T-FORCE DELTA BLACK RGB, 16GB DDR5-6000MHz</h3>
+                    <p>✔️ Disponible</p>
+                    <p class="precio">S/239.00</p>
+                    <a href="" class="agregar-carrito btn-3" data-id="7">Agregar al carrito</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="imagenes/ram-2.jpg" alt="">
+                <div class="product-txt">
+                    <h3>MEMORIA 32GB (16*2) DDR5 BUS 6000MHZ G.SKILL TRIDENT Z5 RGB</h3>
+                    <p>❌ Agotado</p>
+                    <p class="precio">S/599.00</p>
+                    <a href="" class="agregar-carrito btn-3" data-id="8">Agregar al carrito</a>
+                </div>
+            </div>
+    </main>
+
+    <section class="section-icons">
+        <div class="icons container">
+            <div class="box-icons">
+                <i class="bi bi-airplane"></i>
+                <div class="ms-4">
+                    <h3>Envio gratis</h3>
+                    <p>Envió rápido por tiempo limitado</p>
+                </div>
+                <div class="box-icons">
+                    <i class="bi bi-cart-x"></i>
+                    <div class="ms-4">
+                        <h3>Rembolso</h3>
+                        <p>En caso de que haya algo, te devolveremos tu dinero rápidamente.</p>
+                    </div>
+                </div>
+                <div class="box-icons">
+                    <i class="bi bi-credit-card"></i>
+                    <div class="ms-4">
+                        <h3>Compra segura</h3>
+                        <p>Ambiente seguro para compras online</p>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <footer class="footer1">
+        <div class="foot container">
+            <div class="footer-row">
+                <div class="footer-link">
+
+                    <h4>Empresa</h4>
+                    <ul>
+                        <li><a href="#">Nosotros</a></li>
+                        <li><a href="#">Nuestros servicios</a></li>
+                        <li><a href="#">Política de privacidad</a></li>
+                        <li><a href="#">Pedidos</a></li>
+                    </ul>
+                </div>
+                <div class="footer-link">
+
+                    <h4>Atención al cliente</h4>
+                    <ul>
+                        <li><a href="#">Preguntas</a></li>
+                        <li><a href="#">Compras</a></li>
+                        <li><a href="#">Envios</a></li>
+                        <li><a href="#">Pagos</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-link">
+
+                    <h4>Home</h4>
+                    <ul>
+                        <li><a href="#">Productos</a></li>
+                        <li><a href="#">categorias</a></li>
+                        <li><a href="#">ofertas</a></li>
+                        <li><a href="#">¿quienes somos?</a></li>
+                    </ul>
+                </div>
+                <div class="footer-link">
+
+                    <h4>Siguenos</h4>
+                    <div class="social-link">
+                        <a href=""><img src="imagenes/fb.png" alt="fb-icon" width="300px" height="300px"></a>
+
+                        <a href=""><img src="imagenes/ig.png" alt="ig" width="300px" height="300px"></a>
+
+                        <a href=""><img src="imagenes/yt.png" alt="yt-icon" width="300px" height="300px"></a>
+
+                        <a href=""><img src="imagenes/tk.png" alt="tk-icon" width="300px" height="300px"></a>
+
+                        <a href=""><img src="imagenes/in.png" alt="in-icon" width="300px" height="300px"></a>
+                    </div>
+                    <div class="newsletter">
+                        <p class="titulo">Nuestro boletín</p>
+                        <p>¡Suscríbete a nuestra web y recibe las mejores ofertas GRATIS!</p>
+                        <form action="" method="post">
+                            <div class="newsletter-caja">
+                                <input type="email" name="email" id="email" placeholder="Escribe tu email aquí..."
+                                    required>
+                                <button type="submit">Suscribir</button>
+
+                            </div>
+
+                        </form>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="footer-2">
+                <p>FoxTec 2024 © Todos los derechos reservados</p>
+                <a href="http://" target="_blank" rel="noopener noreferrer">
+                    <p>Políticas de privacidad y uso de datos</p>
+                </a>
+                <a href="http://" target="_blank" rel="noopener noreferrer">
+                    <p>Términos y Condiciones</p>
+                </a>
+            </div>
+
+        </div>
+
+    </footer>
+
+    <section id="chatwp">
+        <div class="whatsapp" id="whatsapp">
+            <a href="https://wa.me/51917125825/?text=Hola+quiero+mas+información.">
+                <img src="imagenes/WhatsApp.svg.webp" alt="" width="640px" height="644px">
+            </a>
+        </div>
+    </section>
+
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
